@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base Pattern -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="200dp"
+                android:centerX="0.2"
+                android:centerY="0.3"
+                android:startColor="#1AFF6B9D"
+                android:endColor="#00FF6B9D" />
+        </shape>
+    </item>
+    
+    <!-- Secondary Pattern -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="150dp"
+                android:centerX="0.8"
+                android:centerY="0.7"
+                android:startColor="#1A00BCD4"
+                android:endColor="#0000BCD4" />
+        </shape>
+    </item>
+    
+    <!-- Tertiary Pattern -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="100dp"
+                android:centerX="0.5"
+                android:centerY="0.1"
+                android:startColor="#1A6C5CFF"
+                android:endColor="#006C5CFF" />
+        </shape>
+    </item>
+    
+</layer-list>

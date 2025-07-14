@@ -1,0 +1,77 @@
+[versions]
+agp = "8.5.2"
+applandeoMaterialCalendarView = "1.9.2"
+compiler = "4.16.0"
+compilerVersion = "4.15.1"
+firebaseAuthVersion = "22.3.1"
+glide = "4.16.0"
+glideVersion = "4.15.1"
+kotlin = "2.1.0"
+googleGmsGoogleServices = "4.4.2"
+biometric = "1.2.0-alpha05"
+cardview = "1.0.0"
+firebaseBom = "33.14.0"
+gson = "2.13.1"
+itextg = "5.5.10"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lottie = "6.6.6"
+material = "1.12.0"
+materialCalendarview = "2.0.1"
+materialCalendarviewVersion = "1.4.3"
+materialVersion = "1.10.0"
+mpandroidchart = "v3.1.0"
+places = "4.3.1"
+playServicesAds = "24.4.0"
+playServicesAuth = "21.3.0"
+playServicesLocation = "21.3.0"
+playServicesLocationVersion = "21.0.1"
+playServicesMaps = "19.2.0"
+workRuntime = "2.10.1"
+firebaseAuth = "23.2.1"
+workRuntimeVersion = "2.9.0"
+playServicesPlaces = "17.1.0"
+
+[libraries]
+biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+compiler-v4151 = { module = "com.github.bumptech.glide:compiler", version.ref = "compilerVersion" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth-v2231 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-v4151 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+itextg = { module = "com.itextpdf:itextg", version.ref = "itextg" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material-calendar-view = { module = "com.applandeo:material-calendar-view", version.ref = "applandeoMaterialCalendarView" }
+material-calendarview = { module = "com.prolificinteractive:material-calendarview", version.ref = "materialCalendarview" }
+material-v1100 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
+places = { module = "com.google.android.libraries.places:places", version.ref = "places" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-location-v2101 = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocationVersion" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+prolificinteractive-material-calendarview = { module = "com.github.prolificinteractive:material-calendarview", version.ref = "materialCalendarviewVersion" }
+work-runtime = { module = "androidx.work:work-runtime", version.ref = "workRuntime" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+work-runtime-v290 = { module = "androidx.work:work-runtime", version.ref = "workRuntimeVersion" }
+play-services-places = { group = "com.google.android.gms", name = "play-services-places", version.ref = "playServicesPlaces" }
+
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }

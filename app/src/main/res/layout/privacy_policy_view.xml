@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/privacyPolicyContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:visibility="gone">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/privacyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy &amp; Policy"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorControlNormal" />
+
+                <ImageView
+                    android:id="@+id/closePrivacy"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:contentDescription="Close"
+                    app:tint="#FF3333" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#CCCCCC" />
+
+            <!-- Scrollable Content -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:fadeScrollbars="true">
+
+                <TextView
+                    android:id="@+id/privacyContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Pocket Money App respects your privacy. We collect limited personal data for the purpose of providing services such as:\n\n• Account verification and security.\n• Wallet and transaction functionality.\n• Personalized offers and referrals.\n• Customer support and engagement.\n\n🔐 **Data Protection**:\nAll user data is encrypted and never shared with third parties without consent.\n\n📲 **Permissions**:\nWe may ask for:\n- Location (for region-specific offers)\n- Contacts (for referral tracking)\n- Storage access (for profile image upload)\n\nYou can manage these permissions anytime from your device settings.\n\n💬 For full details, please visit our official website.\n\nThank you for trusting Pocket Money!" />
+            </ScrollView>
+
+            <!-- Button (optional) -->
+            <Button
+                android:id="@+id/agreePolicyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I Agree"
+                android:textStyle="bold"
+                android:backgroundTint="#00C853"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:drawablePadding="10dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

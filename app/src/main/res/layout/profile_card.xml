@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileCardContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:visibility="gone"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="40dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="24dp"
+        android:background="@drawable/profile_card_gradient">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_card_gradient"
+                android:padding="24dp">
+
+                <!-- Header Section -->
+                <LinearLayout
+                    android:id="@+id/headerSection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/profileTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My Profile"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="start" />
+
+                    <ImageButton
+                        android:id="@+id/closeProfile"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/close_button_background"
+                        android:contentDescription="Close Profile"
+                        android:padding="8dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_close"
+                        app:tint="@color/white" />
+                </LinearLayout>
+
+                <!-- Profile Picture Section -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profileImageCard"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/headerSection"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/profileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/profile_animation"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- User Status Badge -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/statusBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/success"
+                    app:layout_constraintTop_toBottomOf="@id/profileImageCard"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/statusText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✓ Verified Account"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Profile Information Section -->
+                <LinearLayout
+                    android:id="@+id/profileInfoSection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/statusBadge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <!-- Name Field -->
+                    <include
+                        android:id="@+id/nameItem"
+                        layout="@layout/profile_info_item" />
+
+                    <include
+                        android:id="@+id/emailItem"
+                        layout="@layout/profile_info_item" />
+
+                    <include
+                        android:id="@+id/phoneItem"
+                        layout="@layout/profile_info_item" />
+
+                    <include
+                        android:id="@+id/genderItem"
+                        layout="@layout/profile_info_item" />
+
+                    <include
+                        android:id="@+id/joinDateItem"
+                        layout="@layout/profile_info_item" />
+                </LinearLayout>
+
+                <!-- Action Buttons Section -->
+                <LinearLayout
+                    android:id="@+id/actionButtonsSection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/profileInfoSection"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <!-- Update Profile Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUpdateProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Update Profile"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"
+                        app:backgroundTint="@color/primary"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_edit"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Settings Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Account Settings"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_medium"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        app:strokeColor="@color/white"
+                        app:strokeWidth="2dp"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_settings"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp"
+                        app:iconTint="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Logout Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Logout"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_medium"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_logout"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp"
+                        app:iconTint="@color/error"
+                        android:textColor="@color/error" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Expense"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_surface"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Amount Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/amountInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_background"
+                android:hint="Enter amount"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_rupee"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+        <!-- Quick Amount Buttons -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp">
+
+                <Button
+                    android:id="@+id/btn50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="₹50"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/button_outline"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="₹100"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/button_outline"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="₹500"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/button_outline"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn1000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹1000"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/button_outline"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Category Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/categoryInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_background"
+                android:hint="Select category"
+                android:inputType="none"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_category"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+        <!-- Note Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note/Description"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/noteInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_background"
+                android:hint="Enter description"
+                android:inputType="textCapSentences"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:completionThreshold="1"
+                android:drawableStart="@drawable/ic_edit"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+        <!-- Date Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/dateInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_background"
+                android:hint="Select date"
+                android:inputType="none"
+                android:focusable="false"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_calendar_today"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+        <!-- Additional Features -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <Button
+                android:id="@+id/btnAddPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="📷 Photo"
+                 android:textColor="@color/primary"
+                android:background="@drawable/button_outline"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnAddLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="📍Location"
+                android:textColor="@color/primary"
+                android:background="@drawable/button_outline"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- Photo Preview Container -->
+        <LinearLayout
+            android:id="@+id/photoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷 Photo Preview"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/photoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_background" />
+        </LinearLayout>
+
+        <!-- Location Info Container -->
+        <LinearLayout
+            android:id="@+id/locationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Location Added"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current location captured"
+                android:textSize="12sp"
+                android:textColor="@color/on_surface_variant" />
+        </LinearLayout>
+
+        <!-- Recurring Switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_background">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔄 Recurring Expense"
+                android:textSize="16sp"
+                android:textColor="@color/on_surface" />
+
+            <Switch
+                android:id="@+id/recurringSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Recurrence Type -->
+        <LinearLayout
+            android:id="@+id/recurrenceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recurrence Type"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/recurrenceSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_background"
+                android:hint="Select frequency"
+                android:inputType="none"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_repeat"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

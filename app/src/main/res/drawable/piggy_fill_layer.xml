@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background piggy outline -->
+    <item>
+        <bitmap
+            android:src="@drawable/rupee"
+            android:gravity="center"/>
+    </item>
+
+    <!-- Fill layer (ClipDrawable inside LayerDrawable) -->
+    <item android:id="@+id/fillClip">
+        <clip
+            android:drawable="@drawable/piggy_bank"
+            android:clipOrientation="vertical"
+            android:gravity="bottom"/>
+    </item>
+</layer-list>

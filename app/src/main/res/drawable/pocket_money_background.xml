@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Elegant Teal to White Gradient Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#FF018786"
+                android:endColor="#FFFFFFFF"
+                android:centerX="0.6"
+                android:centerY="0.4" />
+        </shape>
+    </item>
+
+    <!-- Subtle rupee icon pattern -->
+    <item>
+        <bitmap
+            android:src="@drawable/rupee"
+            android:tileMode="repeat"
+            android:alpha="0.06" />
+    </item>
+
+    <!-- Radial glow to draw attention to center -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="600dp"
+                android:startColor="#00FFFFFF"
+                android:endColor="#33018786"
+                android:centerX="0.5"
+                android:centerY="0.3" />
+        </shape>
+    </item>
+
+    <!-- Soft blurred teal circle bottom-left -->
+    <item android:bottom="-300dp" android:left="-150dp">
+        <shape android:shape="oval">
+            <solid android:color="#1A018786" />
+            <size android:width="700dp" android:height="700dp" />
+        </shape>
+    </item>
+
+    <!-- Soft blurred dark teal circle top-right -->
+    <item android:top="-350dp" android:right="-200dp">
+        <shape android:shape="oval">
+            <solid android:color="#33001857" />
+            <size android:width="600dp" android:height="600dp" />
+        </shape>
+    </item>
+
+</layer-list>

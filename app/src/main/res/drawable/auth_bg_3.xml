@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+
+    <!-- Top blue shape -->
+    <path
+        android:fillColor="#4FACFE"
+        android:pathData="M0,0 L400,0 L400,350 Q200,450 0,350 Z" />
+
+    <!-- Bottom aqua shape with transparency -->
+    <path
+        android:fillColor="#00F2FE"
+        android:fillAlpha="0.85"
+        android:pathData="M0,200 Q200,100 400,200 L400,600 L0,600 Z" />
+
+    <!-- Circle (200,140) r=24 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M200,140 m-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0" />
+
+    <!-- Circle (340,220) r=19 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.13"
+        android:pathData="M340,220 m-19,0 a19,19 0 1,0 38,0 a19,19 0 1,0 -38,0" />
+
+    <!-- Circle (120,380) r=21 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.09"
+        android:pathData="M120,380 m-21,0 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0" />
+</vector>

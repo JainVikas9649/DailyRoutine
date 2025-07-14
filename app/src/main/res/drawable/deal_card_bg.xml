@@ -1,0 +1,5 @@
+<!-- res/drawable/deal_card_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#FFF9C4"/>
+    <corners android:radius="16dp"/>
+</shape>

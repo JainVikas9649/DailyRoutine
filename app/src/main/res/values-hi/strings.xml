@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">पॉकेट मनी</string>
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="header_name">पॉकेट मनी</string>
+    <string name="total_amount">कुल: ₹0</string>
+    <string name="filter">फ़िल्टर</string>
+    <string name="monthly_budget">मासिक बजट: निर्धारित नहीं</string>
+    <string name="calender">कैलेंडर</string>
+    <string name="download_pdf">पीडीएफ डाउनलोड करें</string>
+    <string name="cancle">कैंसिल</string>
+    <string name="add">जोड़ें</string>
+    <string name="calendar">कैलेंडर</string>
+    <string name="change_theme">🎨 विषय को परिवर्तित करें</string>
+    <string name="notification_setting">🔔 अधिसूचना सेटिंग्स</string>
+    <string name="monthly_summary">मासिक सारांश</string>
+    <string name="change_language">🌐 भाषा बदलें</string>
+    <string name="edit_information">👤 व्यक्तिगत जानकारी संपादित करें</string>
+    <string name="about_app">ℹ️ जानिए ऐप के बारे में</string>
+    <string name="enter_amount">राशि डालें</string>
+    <string name="enter_note">नोट दर्ज करें</string>
+    <string name="repeat_expense">इस खर्च को दोबारा दोहराएं</string>
+    <string name="reminder">⏰ अनुस्मारक</string>
+    <string name="tell_us">हमें अपने बारे में बताएं</string>
+    <string name="summary">सारांश</string>
+    <string name="reset">रीसेट करें</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="email_address">मेल पता</string>
+    <string name="submit">जमा करना</string>
+    <string name="date">तारीख</string>
+    <string name="note">टिप्पणी</string>
+    <string name="welcome_back">वापसी पर स्वागत है!</string>
+    <string name="welcome">स्वागत है</string>
+    <string name="home">घर</string>
+    <string name="piggybank">गुल्लक</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="planner">योजनाकार</string>
+    <string name="savedreminder">सहेजे गए अनुस्मारक</string>
+    <string name="privacypolocy">गोपनीयता नीति</string>
+    <string name="resetdata">डेटा रीसेट करें</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="totalhistory">कुल राशि का इतिहास</string>
+    <string name="logout">लॉग आउट</string>
+    <string-array name="recurrence_options">
+        <item>दैनिक</item>
+        <item>साप्ताहिक</item>
+        <item>मासिक</item>
+    </string-array>
+
+
+    <string-array name="gender_options">
+        <item>पुरुष</item>
+        <item>महिला</item>
+        <item>अन्य</item>
+    </string-array>
+
+
+        <string name="history_title">इतिहास</string>
+        <string name="total_amount_history">कुल राशि इतिहास</string>
+
+        <!-- Labels -->
+        <string name="total_amount1">कुल राशि</string>
+        <string name="total_format">कुल: ₹%1$d</string>
+        <string name="amount_format">₹%1$s</string>
+        <string name="entries_count_single">%1$d प्रविष्टि</string>
+        <string name="entries_count_plural">%1$d प्रविष्टियाँ</string>
+
+        <!-- Buttons -->
+        <string name="sort">क्रमबद्ध करें</string>
+        <string name="clear_all">सब हटाएँ</string>
+        <string name="delete">हटाएँ</string>
+        <string name="cancel">रद्द करें</string>
+        <string name="newest_first">नवीनतम पहले</string>
+        <string name="oldest_first">पुराने पहले</string>
+
+        <!-- Dialog Messages -->
+        <string name="delete_entry_title">प्रविष्टि हटाएँ</string>
+        <string name="delete_entry_message">क्या आप वाकई इस प्रविष्टि को हटाना चाहते हैं?\n\nराशि: ₹%1$d\nतिथि: %2$s</string>
+        <string name="clear_all_title">सभी इतिहास हटाएँ</string>
+        <string name="clear_all_message">क्या आप वाकई सभी %1$d प्रविष्टियाँ हटाना चाहते हैं? यह क्रिया वापस नहीं की जा सकती।</string>
+
+        <!-- Toast Messages -->
+        <string name="entry_deleted">प्रविष्टि हटाई गई</string>
+        <string name="all_entries_cleared">सभी प्रविष्टियाँ हटाई गईं</string>
+        <string name="no_entries_to_clear">कोई प्रविष्टियाँ हटाने के लिए नहीं हैं</string>
+
+        <!-- Empty State -->
+        <string name="no_history_title">अभी तक कोई इतिहास नहीं</string>
+        <string name="no_history_subtitle">आपका लेनदेन इतिहास यहाँ दिखाई देगा</string>
+
+        <!-- Content Descriptions -->
+        <string name="back_button">वापस</string>
+        <string name="delete_button">हटाएँ</string>
+        <string name="sort_button">प्रविष्टियों को क्रमबद्ध करें</string>
+        <string name="clear_all_button">सभी प्रविष्टियाँ हटाएँ</string>
+        <string name="ai_chat_description">एआई चैट खोलें</string>
+        <string name="edit_profile_description">प्रोफ़ाइल संपादित करें</string>
+
+        <!-- Date Formats -->
+        <string name="date_format">dd MMM yyyy</string>
+        <string name="time_format">hh:mm:ss a</string>
+        <string name="datetime_format">dd-MMM-yyyy hh:mm:ss a</string>
+
+        <!-- Settings Activity -->
+        <string name="settings_title">सेटिंग्स</string>
+
+        <!-- Sections -->
+        <string name="appearance_section">दिखावट</string>
+        <string name="preferences_section">प्राथमिकताएँ</string>
+        <string name="support_section">सहायता</string>
+        <string name="navigation_drawer_open">नेविगेशन ड्रॉअर खोलें</string>
+        <string name="navigation_drawer_close">नेविगेशन ड्रॉअर बंद करें</string>
+        <string name="theme_setting">थीम</string>
+        <string name="theme_description">लाइट मोड सक्रिय है</string>
+        <string name="language_setting">भाषा</string>
+        <string name="language_description">वर्तमान: अंग्रेज़ी</string>
+         <string name="notification_description">महत्वपूर्ण अपडेट्स की सूचनाएँ प्राप्त करें</string>
+        <string name="privacy_setting">डेटा और गोपनीयता</string>
+        <string name="privacy_description">अपने डेटा और गोपनीयता सेटिंग्स प्रबंधित करें</string>
+        <string name="help_setting">सहायता और समर्थन</string>
+        <string name="help_description">सहायता प्राप्त करें या समर्थन से संपर्क करें</string>
+        <string name="about_setting">ऐप के बारे में</string>
+        <string name="version_info">संस्करण 1.0</string>
+    <string name="clear_filter">फ़िल्टर हटाएं</string>
+    <string name="add_expense">खर्च जोड़ें</string>
+    <string name="set_budget">बजट सेट करें</string>
+    <string name="analytics">विश्लेषण</string>
+    <string name="recent_transactions">हाल की लेनदेन</string>
+    <string name="no_expenses_yet">अभी तक कोई खर्च नहीं</string>
+    <string name="start_tracking">अपना पहला लेनदेन जोड़कर अपने खर्चों का ट्रैकिंग शुरू करें</string>
+    <string name="add_first_expense">पहला खर्च जोड़ें</string>
+</resources>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/nav_header_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="16dp">
+
+    <!-- Tip / Quote Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tip_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/note"
+            android:layout_marginEnd="8dp"
+            app:tint="#FFA000" />
+
+        <TextView
+            android:id="@+id/textMoneyTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Today's Tip Will Show Here"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+
+    <!-- Horizontal layout for image and username -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/user"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/nav_header_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Welcome message below -->
+    <TextView
+        android:id="@+id/nav_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

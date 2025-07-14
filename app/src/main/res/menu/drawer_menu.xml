@@ -1,0 +1,66 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    >
+
+    <group android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home1"
+            android:iconTint="?attr/colorControlNormal"
+             android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:iconTint="?attr/colorControlNormal"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/nav_Calender1"
+            android:icon="@drawable/calendar"
+            android:iconTint="?attr/colorControlNormal"
+            android:title="@string/planner" />
+
+        <item
+            android:id="@+id/nav_savedReminder"
+            android:icon="@drawable/bookmark"
+            android:iconTint="?attr/colorControlNormal"
+            android:title="@string/savedreminder" />
+        <item
+            android:id="@+id/nav_piggy"
+            android:icon="@drawable/piggy_bank"
+            android:title="@string/piggybank" />
+        <item
+            android:id="@+id/total_history"
+            android:icon="@drawable/history"
+            android:title="@string/totalhistory" />
+
+        <item
+            android:id="@+id/nav_Privacy"
+            android:icon="@drawable/insurance"
+            android:title="@string/privacypolocy" />
+
+        <item
+            android:iconTint="@color/black"
+            android:id="@+id/nav_ResetData"
+            android:icon="@drawable/delete"
+            android:title="@string/resetdata" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/setting"
+                android:title="@string/settings" />
+
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

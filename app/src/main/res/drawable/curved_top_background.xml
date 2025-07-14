@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#B3E5FC"
+                android:centerColor="#E1BEE7"
+                android:endColor="#F8BBD9"
+                android:angle="135" />
+        </shape>
+    </item>
+    
+    <!-- Curved bottom overlay -->
+    <item android:top="350dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_background" />
+            <corners
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp" />
+        </shape>
+    </item>
+</layer-list>

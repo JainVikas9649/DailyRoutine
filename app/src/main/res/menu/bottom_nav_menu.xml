@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_home_filled" />
+
+        <item
+            android:id="@+id/nav_ClockSet"
+            android:title="Reminder"
+            android:icon="@drawable/reminder" />
+    <item
+        android:id="@+id/fabMic"
+        android:title="Mic"
+        android:icon="@drawable/ic_baseline_mic_24" />
+    <item
+        android:id="@+id/nav_summary"
+        android:title="Summary"
+        android:icon="@drawable/bargraph" />
+
+    <item
+        android:id="@+id/nav_reset"
+        android:title="Reset"
+        android:icon="@drawable/delete" />
+</menu>

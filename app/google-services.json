@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "248112868999",
+    "project_id": "pocket-money-edbc3",
+    "storage_bucket": "pocket-money-edbc3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248112868999:android:0ba4e83a6922a322999222",
+        "android_client_info": {
+          "package_name": "app.dailyroutine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248112868999-o2dvbpju3c5jih4tmquucp584o90aoa1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.dailyroutine",
+            "certificate_hash": "f816d8cf28684fc742f83d4f2c6f466ab6a4f6a4"
+          }
+        },
+        {
+          "client_id": "248112868999-nb8tscp4194j4a8g1kltqt4loipta994.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbz0XzVpOBvlXeAaxR1Lpl5WBb81XlNG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248112868999-nb8tscp4194j4a8g1kltqt4loipta994.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

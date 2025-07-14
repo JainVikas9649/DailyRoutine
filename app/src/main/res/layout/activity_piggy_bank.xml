@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/buttonBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_button_background"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="8dp"
+                android:contentDescription="Back"
+                android:elevation="4dp"
+                app:tint="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/settingsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Piggy Bank"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/roboto_bold" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <!-- Goal Input Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_section_background"
+            android:padding="12dp"
+            android:elevation="2dp">
+
+            <EditText
+                android:id="@+id/editGoalAmount"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Enter Goal (₹)"
+                android:inputType="number"
+                android:background="@drawable/modern_edit_text_bg"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/gray" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSetGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="SET GOAL"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/green_primary"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:cornerRadius="24dp"
+
+                app:icon="@drawable/ic_target"
+                app:iconSize="18dp"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+        <!-- Goal Display -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/textGoalDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal: ₹0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"
+                android:layout_marginBottom="8dp" />
+
+            <ProgressBar
+                android:id="@+id/progressGoal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="32dp"
+                android:progress="0"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_drawable"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Piggy Bank Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@color/card_background"
+            android:layout_marginBottom="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Piggy Bank Image -->
+                <ImageView
+                    android:id="@+id/imagePiggyBank"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_piggy_bank"
+                    android:contentDescription="Piggy Bank"
+                    app:tint="@color/pink_primary" />
+
+                <!-- Fill Indicator -->
+                <ProgressBar
+                    android:id="@+id/progressFill"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/imagePiggyBank"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:progress="0"
+                    android:max="100"
+                    android:progressDrawable="@drawable/fill_progress_drawable" />
+
+                <!-- Coin Animation Container -->
+                <FrameLayout
+                    android:id="@+id/coinAnimationContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Savings Display -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/textSavingsAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Savings: ₹240"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/textSavingsSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginHorizontal="24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonFeedCoin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="🐷 FEED COIN"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/orange_primary"
+                app:cornerRadius="28dp"
+                android:elevation="6dp"
+                android:layout_marginBottom="16dp"
+                app:rippleColor="@color/orange_ripple" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResetPiggy"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="🔄 RESET"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/red_primary"
+                app:cornerRadius="28dp"
+                android:elevation="6dp"
+                app:icon="@drawable/ic_refresh"
+                app:iconSize="20dp"
+                app:rippleColor="@color/red_ripple" />
+
+        </LinearLayout>
+
+        <!-- Achievement Display -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/textAchievement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/achievement_background"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textAchievementContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/orange_dark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="16dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</ScrollView>

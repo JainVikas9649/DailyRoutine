@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <item android:duration="1000">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="50dp"
+                android:startColor="#4DFF6B9D"
+                android:centerColor="#33FF4081"
+                android:endColor="#1AE91E63" />
+        </shape>
+    </item>
+    
+    <item android:duration="1000">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="60dp"
+                android:startColor="#66FF6B9D"
+                android:centerColor="#4DFF4081"
+                android:endColor="#33E91E63" />
+        </shape>
+    </item>
+    
+    <item android:duration="1000">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="70dp"
+                android:startColor="#80FF6B9D"
+                android:centerColor="#66FF4081"
+                android:endColor="#4DE91E63" />
+        </shape>
+    </item>
+    
+</animation-list>
