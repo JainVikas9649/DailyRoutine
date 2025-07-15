@@ -15,7 +15,7 @@
 ---
 
 ## 📷 Screenshots
-<img width="1080" height="2400" alt="Screenshot_20250715_132337" src="https://github.com/user-attachments/assets/c410d95a-4200-44b7-9fcb-3450544ae9fc" />
+<img width="600" height="1200" alt="Screenshot_20250715_132337" src="https://github.com/user-attachments/assets/c410d95a-4200-44b7-9fcb-3450544ae9fc" />
 <img width="1080" height="2400" alt="Screenshot_20250715_132409" src="https://github.com/user-attachments/assets/1ea4a0bb-6e15-4593-b8b7-ef0c5bc2f708" />
 <img width="1080" height="2400" alt="Screenshot_20250715_132427" src="https://github.com/user-attachments/assets/0f50731f-34ea-4fbe-bca0-300bb96ac115" />
 <img width="1080" height="2400" alt="Screenshot_20250715_132440" src="https://github.com/user-attachments/assets/0a2941e3-eb8e-4463-8a02-e7d101b743da" />
