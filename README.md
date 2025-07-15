@@ -14,8 +14,7 @@
 
 ---
 
-## 📷 Screenshots
-## 📷 Screenshots
+ ## 📷 Screenshots
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c410d95a-4200-44b7-9fcb-3450544ae9fc" width="300" />
